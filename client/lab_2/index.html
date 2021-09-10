@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 
-<html>
+<html lang='en'>
     <head>
-      <!--   <title> Faith Wilkins El</title>
-        Comment -->
-        <link rel='stylesheet' href='lab_2\styles.css' />
+        <title> Faith Wilkins El</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel='stylesheet' href='styles.css' />
     </head>
 
     <body> 
-
-        <div id='nav'> <h1>Faith Wilkins El Lab 1: Intro to HTML</h1> </div>
+        <div class='wrapper title' style='width: 100%;'><h1 id='div-format'>Faith Wilkins El Lab 1: Intro to HTML</h1></div>
+        <nav> <a href='selectors.html' class='wrapper' id='div-format'> Selectors </a> <a href='index.html' class='wrapper' id='div-format'> Main page </a> </nav>
         
-        <h2> Hi, I'm Faith Your Fav Back-end Software Engineer </h2>
+        <div class='wrapper'>
+            <h2 class='subtitle'> Hi, I'm Faith Your Fav Back-end Software Engineer. </h2>
+            <p> Coding languages I am decent in:</p>
+      </div>
+        <div class='section_1 wrapper' style='margin-left: 0em;' >
+            <div class='section_4' >
+                <ul>
+                    <li> HTML and CSS </li>
+                    <li> Javascript </li>
+                    <li> Java </li>
+                </ul>
+            </div>
+            <div>
+                <p> Here are my top 5 favorite albums:</p>
+                <ol>
+                    <li> Back to the future - the best of Jodeci </li>
+                    <li> Voyager - Moonchild </li>
+                    <li> Tina Snow - Megan Thee Stallion</li>
+                    <li> Strictly 4 My N.I.G.G.A.Z - 2PAC </li>
+                    <li> Heart Break - New Edition</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class='wrapper section_2 '>
+            <h2 class='subtitle'> Fun Facts About Me </h2>
+            <p> I went <em>scuba diving</em> in Australia.</p>
+            <p> I love to cook especially cooking <strong>Indian Food</strong>. </p>
+            <p> My boyfriend is teaching me how to be fluent in <em><strong>Dominican Spanish</strong></em>. </p>
+        </div>
         
-        <p> Coding languages I am decent in:</p>
-        <ul>
-            <li> HTML and CSS </li>
-            <li> Javascript </li>
-            <li> Java </li>
-        </ul>
-
-        <p> Here are my top 5 favorite albums:</p>
-        <ol>
-            <li> Back to the future - the best of Jodeci </li>
-            <li> Voyager - Moonchild </li>
-            <li> Tina Snow - Megan Thee Stallion</li>
-            <li> Strictly 4 My N.I.G.G.A.Z - 2PAC </li>
-            <li> Heart Break - New Edition</li>
-        </ol>
-
-        <h2> Fun Facts About Me </h2>
-        <p> I went <em>scuba diving</em> in Australia.</p>
-        <p> I love to cook especially cooking <strong>Indian Food</strong>. </p>
-        <p> My boyfriend is teaching me how to be fluent in <em><strong>Dominican Spanish</strong></em>. </p>
-
-        <h2>Class Goals</h2>
-        <p> Master my web development skills to be a better software engineer.<br/> 
-            Finally understand how to connect databases to websites.  <br/>
-            Get an <strong> A</strong> to finish my last semester off strongly.<hr/> 
-        </p>
-
-        <h2> Cute Images</h2>
-        <p> Here are four images found in the tutorial for this class.</p>
-        <p> I really thought they were cute and would look good on my website. <br/> </p>
-        <p>    
-            <img src='images/mochi.png' width='95' alt='A mochi ball png'/>
-            <img src='images/mochi.gif' width='95' alt='A mochi ball gif' />
-            <img src='images/mochi.jpg' width='95' alt='A mochi ball jpg' />
-            <img src='images/mochi.svg' width='95' alt='A mochi ball svg'/> <hr/>
-        </p>
+        <div class='wrapper section_3' style='margin-bottom: 0em;'>
+            <h3>Class Goals</h3>
+            <p> Master my web development skills to be a better software engineer.<br/> 
+                Finally understand how to connect databases to websites.  <br/>
+                Get an <strong> A</strong> to finish my last semester off strongly.
+            </p> 
+        </div> <hr class='wrapper'/> 
         
-        <p> <a href='https://github.com/lavendermistyco/INST377-Lab-Work'>Here</a> is the link to my beautiful GitHub repo.</p>
-        <p>If you want to see my past projects, feel free to look around my GitHub. </p>
+        <div class='wrapper section_4' style='margin-top: 1.5em;'>
+            <div>
+                <h2 class='subtitle'> Cute Images</h2>
+                <p> Here are four images found in the tutorial for this class. </p> 
+                <p> I really thought they were cute and would look good on my website. </p>
+            </div>
+
+            <div class='carousel'>
+                <div class='slides'> 
+                    <img src='images/mochi.png'  alt='A mochi ball png'/> 
+                    <img src='images/mochi.gif'  alt='A mochi ball gif' />
+                    <img src='images/mochi.jpg'  alt='A mochi ball jpg' />
+                    <img src='images/mochi.svg'  alt='A mochi ball svg'/>
+                </div>
+             </div> 
+        </div> 
+        <div class='wrapper'>   
+            <p> <a href='https://github.com/lavendermistyco/INST377-Lab-Work' style='color:blue;'>Here is the link to my beautiful GitHub repo.</a> </p>
+            <p>If you want to see my past projects, feel free to look around my GitHub. </p>
+        </div>
     </body>
 </html>
