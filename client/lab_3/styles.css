@@ -62,7 +62,7 @@
   .links {
     border: 1px solid #fff;  /* For debugging */
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   
   .login {
