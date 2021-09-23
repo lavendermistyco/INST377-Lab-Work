@@ -1,0 +1,108 @@
+body {
+    display: flex;
+}
+
+.game-container {
+    width: 500px;
+    height: 730px;
+    position: absolute;
+    left: 80px;
+}
+
+.borderLeft {
+    width: 80px;
+    height: 810px;
+    position: relative;
+    background-color: white;
+    z-index: +2;
+}
+
+.borderRight {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    left: 580px;
+}
+
+.borderTop {
+    width: 700px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    top: -50px;
+}
+.sky {
+    background-image: url('/INST377-Lab-Work/client/flappy/images/fb-game-background.png');
+    width: 500px;
+    height: 580px;
+    position:absolute;
+}
+
+.ground {
+    background-image: url('/INST377-Lab-Work/client/flappy/images/ground.v1.png') ;
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 580px;
+    z-index: +1;
+}
+
+.bird {
+    background-image: url('/INST377-Lab-Work/client/flappy/images/flappy-bird-s.png');
+    position: absolute;
+    height: 45px;
+    width: 60px ;
+}
+
+.obstacle {
+    background-image: url('/INST377-Lab-Work/client/flappy/images/flappybird-pipe.png');
+    width: 60px;
+    height: 300px; 
+    position: absolute;
+}
+
+.topObstacle {
+    background-image: url('/INST377-Lab-Work/client/flappy/images/flappybird-pipe.png');
+    transform: rotate(180deg);
+    width: 60px;
+    height: 300px; 
+    position: absolute;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 10000%;
+    } to {
+        background-position: 0%;
+    }
+}
+
+@-webkit-keyframes slideright {
+    from {
+        background-position: 10000%;
+    } to {
+        background-position: 0%;
+    }
+}
+
+.ground-container {
+    height: 150px;
+    width: 580px;
+    position: absolute;
+    z-index: +1 ;
+}
+
+.ground-moving {
+    position: absolute;
+    top: 580px;
+    height: 150px;
+    background-image: url('/INST377-Lab-Work/client/flappy/images/ground.v1.png');
+    background-repeat: repeat-x;
+    animation: slideright 100s infinite linear;
+    -webkit-animation: slideright 100s infinite linear;
+    width: 100%;
+    z-index: +1;
+}
