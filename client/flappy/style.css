@@ -35,14 +35,14 @@ body {
     top: -50px;
 }
 .sky {
-    background-image: url('/INST377-Lab-Work/client/flappy/images/fb-game-background.png');
+    background-image: url('images/fb-game-background.png');
     width: 500px;
     height: 580px;
     position:absolute;
 }
 
 .ground {
-    background-image: url('/INST377-Lab-Work/client/flappy/images/ground.v1.png') ;
+    background-image: url('images/ground.v1.png') ;
     width: 500px;
     height: 150px;
     position: absolute;
@@ -51,21 +51,21 @@ body {
 }
 
 .bird {
-    background-image: url('/INST377-Lab-Work/client/flappy/images/flappy-bird-s.png');
+    background-image: url('images/flappy-bird-s.png');
     position: absolute;
     height: 45px;
     width: 60px ;
 }
 
 .obstacle {
-    background-image: url('/INST377-Lab-Work/client/flappy/images/flappybird-pipe.png');
+    background-image: url('images/flappybird-pipe.png');
     width: 60px;
     height: 300px; 
     position: absolute;
 }
 
 .topObstacle {
-    background-image: url('/INST377-Lab-Work/client/flappy/images/flappybird-pipe.png');
+    background-image: url('images/flappybird-pipe.png');
     transform: rotate(180deg);
     width: 60px;
     height: 300px; 
@@ -99,7 +99,7 @@ body {
     position: absolute;
     top: 580px;
     height: 150px;
-    background-image: url('/INST377-Lab-Work/client/flappy/images/ground.v1.png');
+    background-image: url('images/ground.v1.png');
     background-repeat: repeat-x;
     animation: slideright 100s infinite linear;
     -webkit-animation: slideright 100s infinite linear;
