@@ -1,11 +1,19 @@
 /* eslint-disable no-console */
 import express from 'express';
+<<<<<<< HEAD
+=======
+import labRoutes from './server/labRoutes.js';
+import apiRoutes from './server/routes/apiRoutes.js';
+>>>>>>> 17514e1bb9519f84c7a2fb0ab664c5b893830434
 import reload from 'livereload';
 import connectReload from 'connect-livereload';
 import dotenv from 'dotenv';
 import path from 'path';
+<<<<<<< HEAD
 import labRoutes from './server/labRoutes.js';
 import apiRoutes from './server/routes/apiRoutes.js';
+=======
+>>>>>>> 17514e1bb9519f84c7a2fb0ab664c5b893830434
 
 dotenv.config();
 const __dirname = path.resolve();
