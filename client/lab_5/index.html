@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Lab 5: Faith Wilkins El</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" charset="UTF-8"></script>
+</head>
+
+<body>
+
+    <!-- Row One-->
+    <div class="columns is-two-fifths-mobile is-centered">
+        <div class= "column is-vcentered container headerBox">
+                <p> Prof A's Lab 5</p>
+        </div>
+    </div>
+
+    <!--row two-->
+    <div class="columns is-mobile is-centered is-vcentered">
+        <!-- Empty column container-->
+        <div class="column is-2" ></div>
+        <div class="column container">
+        <div class="box is-centered">
+            <form action="/api" method='GET'class='speaker-form'>
+                <!-- First Form Field-->
+                <div class="field">
+                    <label class="label"> First Name</label>
+                    <div class="control">
+                        <input class="input is-small" type="text" placeholder="e.g John Doe" >
+                    </div>
+                </div>
+                <!-- Food Preference-->
+                <div class="field">
+                    <label class="label"> Food Preference</label>
+                    <div class="control">
+                        <input class="input is-small" type="text" placeholder="e.g Pizza" >
+                    </div>
+                </div>
+                <!-- Radio Buttons -->
+                <div class="field">
+                    <label class="label">Veggie or Vegan?</label>
+                    <div class="control">
+                        <label class="radio">
+                            Yes
+                        <input type="radio" name="answer">
+                        </label>
+                        <label class="radio">
+                            No
+                        <input type="radio" name="answer">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button-->
+                <div class= "field is-grouped">
+                    <div class="control">
+                        <button class="button is-link">Submit</button>
+                    </div>
+                </div>
+            </form>
+       </div>
+     </div>
+
+        <div class="column is-5">
+            <div class="box2">
+                <p class="bd-notification is-primary">This is going to be something in two weeks.</p>
+            </div>
+        </div>
+
+        <!-- Empty column container-->
+        <div class="column" ></div>
+    </div>
+   
+    
+</body>
+</html>

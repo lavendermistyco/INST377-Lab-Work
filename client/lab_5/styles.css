@@ -2,14 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+p {
+
 }
 
 body {
   margin: 0;
   padding: 0;
+  width: auto;
+  height: 1000px;
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
     ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
-  background-color: darkslategray;
+  background-color: #61210B;
+
 }
 
 /* Page Layout */
@@ -25,3 +32,30 @@ body {
   max-width: 960px;
   margin-top: 25px;
 }
+
+.control .button {
+  background-color: #01DF74;
+}
+.box {
+  width: 200px;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+.box, .box2 {
+  background-color: antiquewhite;
+  display: flex;
+}
+
+.box2 {
+ justify-content: left;
+ padding: 1.25em;
+ border-radius: 5px;
+}
+
+.headerBox {
+  background-color: lightsalmon;
+  border-radius: 5px;
+  padding: 1em;
+}
+
