@@ -1,0 +1,17 @@
+.h1 {
+   background-color: #FFFF00; 
+}
+
+.h2 {
+    background-color: aqua;
+}
+
+input[type=text] {
+    width: fit-content;
+    display: flex;
+    padding: 0.5em;
+    box-sizing: content-box;
+}
+input[type=text]:focus {
+    border: 2px dashed blueviolet;
+}
