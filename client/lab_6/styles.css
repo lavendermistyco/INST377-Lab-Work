@@ -6,12 +6,14 @@
     background-color: aqua;
 }
 
-input[type=text] {
-    width: fit-content;
-    display: flex;
-    padding: 0.5em;
-    box-sizing: content-box;
+
+
+input:not([type="button"]):not([type="submit"]):not([type="reset"]):hover, input:not([type="button"]):not([type="submit"]):not([type="reset"]):focus, textarea:hover, textarea:focus, select:hover, select:focus 
+{    
+    border:2px solid blue;    
+    outline:none;
 }
-input[type=text]:focus {
-    border: 2px dashed blueviolet;
+.search{
+padding:5px;
+border:2px solid black;
 }
