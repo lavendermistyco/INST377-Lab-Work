@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Lab 6: Faith Wilkins El</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" charset="UTF-8"></script>
+
 </head>
 
 <body>
@@ -15,61 +17,8 @@
        <ul class = "suggestions" >
        </ul>
    </form>
-
-
-
-
     
 </body>
-
-<script>
-    async function windowActions() {
-        const endpointt = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'; 
-    
-        const request = await fetch(endpointt)
-        
-        const restaurants = await request.json(); 
-        //filter the data by restaurant name and zipcode
-        function findMatches(wordToMatch, restaurants) {
-            return restaurants.filter(place => {
-                //figure out if zip or name matches what was searched
-                const regex = new RegExp(wordToMatch, 'gi');
-                return (place.name.match(regex) && place.category.match('Restaurant') )|| 
-                    (place.zip.match(regex) && place.category.match('Restaurant'));
-            });
-        }
-
-
-        function displayMatches(event) {
-            const matchArray = findMatches(event.target.value, restaurants);
-            const html = matchArray.map(place => {
-                const regex = new RegExp(event.target.value, 'gi');
-                const restaurant = place.name.replace(regex, `<span class="h1">${(event.target.value).toUpperCase()}</span>`);
-                const zipCode = place.zip.replace(regex, `<span class="h2">${(event.target.value)}</span>`);
-                return `
-                    <li> 
-                        <span>
-                            ${restaurant}<br>
-                            ${place.address_line_1} <br>
-                            ${place.city}, ${place.state} <br>
-                            ${zipCode} <br>
-                        </span>
-                    </li>
-                `;
-            }).join('');
-            suggestions.innerHTML = html;
-        }
-
-        const searchInput = document.querySelector('.search');
-        const suggestions = document.querySelector('.suggestions');
-
-        searchInput.addEventListener('change', displayMatches);
-        searchInput.addEventListener('keyup', evt => { displayMatches(evt)});
-    }
-    
-    window.onload = windowActions;
-
-</script>
 
 </html>
 
