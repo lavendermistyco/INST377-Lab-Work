@@ -59,12 +59,10 @@ async function windowActions() {
 
         return `
                     <li class="box resName"> 
-                        <span>
-                            ${place.name}<br>
+                        <span class="restaurantTitle">${place.name}</span><br>
                             ${place.address_line_1} <br>
                             ${place.city}, ${place.state} <br>
                             ${zipCode} <br>
-                        </span>
                     </li>
                 `;
       }).join('');
