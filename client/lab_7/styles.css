@@ -1,0 +1,46 @@
+
+
+.h1 {
+    background-color: #FFFF00; 
+ }
+ 
+ .h2 {
+     background-color: pink;
+     color: black;
+ }
+ 
+ input {
+    width: 100%;
+    margin-bottom: 1.0em;
+ }
+ 
+ input:not([type="button"]):not([type="submit"]):not([type="reset"]):hover, input:not([type="button"]):not([type="submit"]):not([type="reset"]):focus, textarea:hover, textarea:focus, select:hover, select:focus 
+ {    
+     border:2px solid violet;    
+     outline:none;
+     width: 100%;
+ }
+
+ .words{
+    margin-bottom: 1px;
+    font-weight: bold; 
+ }
+ .search{
+ padding:5px;
+ border:2px solid black;
+ }
+
+ #mapid {
+     height: 500px;
+ }
+
+ .resName {
+     background-color: rgb(27, 62, 107);
+     color: whitesmoke;
+ }
+
+ .title {
+     font-size: large;
+     font-weight: bold;
+     margin-bottom: 2px;
+ }
